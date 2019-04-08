@@ -1,0 +1,16 @@
+img {
+  display: block;
+  margin: 96px auto 0 auto; }
+
+form {
+  padding-top: 14px; }
+  form input {
+    display: block;
+    width: 298px;
+    border: 1px solid #efefef;
+    padding: 10px;
+    color: #969696;
+    margin: 14px auto 0 auto; }
+  form #logbtn {
+    color: #fff;
+    background: #ff498c; }

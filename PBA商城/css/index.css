@@ -1,0 +1,77 @@
+.margin{width:1226px;margin:0 auto;color:#969696;}
+header{height:32px;background:#000;}
+header ul{height:32px;}
+header ul li{float:right;padding:0 12px;text-align: center;font:12px/32px "";}
+header ul li img.carlogo{width:12px;height:12px;padding-right:4px;margin-bottom: 3px;}
+header ul li:nth-child(even){padding:0;color:#4b4b4b;}
+header ul li.carshop a{color:#b0b0b0;}
+header ul li.hotline a{cursor:auto;}
+header ul li a{display: block;color:#fff;}
+header ul li:hover a{color:#fff;}
+header ul li.carshop:hover a{color:#b0b0b0;}
+header ul li.myPBA{position: relative;}
+header ul li.myPBA div.mylist{display:none;}
+header ul li.myPBA:hover div.mylist{width:100%;display:block;background:#424242;position: absolute;left:0;top:0;margin-top:32px;}
+header ul li.myPBA div.mylist a:hover{background:#666666;}
+nav{height:162px;}
+nav div{display: flex;padding:50px 0 37px 0;}
+nav div ul{width:708px;height:26px;margin:0 10px 0 20px;padding-top:18px;border-bottom: 1px solid #e9e9e9;}
+nav div ul li{float:left;}
+nav div ul li{font:16px/26px "";padding:0 12px;text-align: center;}
+nav div ul li:first-child{padding-left: 0;}
+nav div ul li:last-child{padding-right: 0;}
+nav .search{width:268px;height:48px;padding:0;}
+nav .search input{width:190px;padding:14px;font-size: 16px;float:left;border:1px solid #eaeaea;}
+nav .search #searchbtn{width:46px;height:46px;border:1px solid #eaeaea;border-left:none;padding:0;}
+nav .search #searchbtn img{margin:13px;border:none;}
+#banner{height:560px;}
+#banner .banner-t{position: relative;}
+#banner .banner-t-l{width:210px;height:394px;position:absolute;top:0;left:0;background:rgba(0,0,0,.6);z-index: 2;}
+#banner .banner-t-l li{height:50px;line-height: 50px;color:#fff;text-indent: 18px;position:relative;}
+#banner .banner-t-l li:first-child{margin-top:20px;}
+#banner .banner-t-l li:hover{background:hotpink;}
+#banner .banner-t-l li span{position:absolute;right:18px;height:50px;line-height: 50px;font-size:18px;}
+#banner .li-list{}/*二级导航*/
+#banner .banner-t-r{height:394px;position: relative;overflow: hidden;}
+#banner .banner-t-r .imgbox{height:394px;}
+#banner .banner-t-r .imgbox a{position: absolute; left:1226px;top:0;}
+#banner .banner-t-r .imgbox a:nth-child(1){left:0;}
+#banner .banner-t-r .imgbox img{width:1226px;height:394px;}
+#banner .banner-t-r .btns input{position: absolute;top:180px;color:rgba(0,0,0,.2);font-size: 50px;border:none;background:none;}
+#banner .banner-t-r .btns #btnL{left:230px;}
+#banner .banner-t-r .btns #btnR{right:20px;}
+#banner .banner-b{display: flex;justify-content: space-between;margin-top:25px;}
+#banner .banner-b img{height:141px;width:303px;}
+h1{font:500 34px/44px "";}
+p{font:14px/30px "";color:#666;}
+.goods-msg{width:100%;position:absolute;left:0;bottom:0;padding-bottom:10px;text-align:center;}
+.goods-msg .goods-msg-t{font-weight:500;color:inherit;}
+.goods-msg .goods-msg-c{color:#656565;}
+.goods-msg .goods-msg-b{font-weight: bold;color:#fe003f;}
+.title{height:120px;text-align: center;}
+.title img{width:279px;height:5px;padding-top:5px;margin:0 auto;}
+.goods{display:flex;justify-content: space-between;}
+.goods li{width:242px;height:350px;position:relative;background:url(http://pbaimage.pba.cn/2014/new_pba/images/homepage/star_goods_bg.png) center center no-repeat;}
+.goods li img{width:100%;height:350px;}
+.goods li .goods-msg .goods-msg-t{font:16px/16px "";}
+.goods li .goods-msg .goods-msg-c{font:14px/34px "";}
+.goods li .goods-msg .goods-msg-b{font:18px/30px "";}
+#star{height:470px;padding:50px 0 40px;}
+section{background:rgba(0,0,0,.04);}
+section .section-title{padding:25px 0 15px;position: relative;}
+section .section-title .section-t-more{width:158px;height:36px;position: absolute;right:0;bottom:34px;}
+section  dl{width:100%;height:614px;overflow: hidden;}
+section  dl dt{width:252px;float:left;}
+section  dl dd{float:left;width:232px;height:300px;background:#fff;margin:0 0 12px 11px;position:relative;}
+section  dl dd .goods-msg .goods-msg-t{font:14px/14px "";}
+section  dl dd .goods-msg .goods-msg-c{font:12px/26px "";}
+section  dl dd .goods-msg .goods-msg-b{font:16px/26px "";}
+#food{height:470px;padding:50px 0 40px;}
+footer{padding:84px 0 50px;background:rgba(0,0,0,.04);}
+footer .footer-t{display:flex;margin-bottom:30px;}
+footer .footer-t .footer-t-l{width:883px;}
+footer .footer-t .footer-t-l .nav{width:883px;}
+footer .footer-t .footer-t-l .nav li{float:left;margin-right:2%;color:#535353;}
+footer .footer-t .footer-t-l .tags{width:600px;margin-top:12px;} 
+footer .footer-t .footer-t-l .tags li{float:left;margin:16px 22px 0 0;}
+footer p{text-align: center;font:14px/18px ""color:#666;}

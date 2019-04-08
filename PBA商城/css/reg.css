@@ -1,0 +1,21 @@
+body {
+  text-align: center; }
+  body img {
+    margin: 97px 0 13px 0; }
+  body h1 {
+    padding-top: 26px;
+    font-weight: 500;
+    color: #000; }
+
+form {
+  padding-top: 14px; }
+  form input {
+    display: block;
+    width: 298px;
+    border: 1px solid #efefef;
+    padding: 10px;
+    color: #969696;
+    margin: 14px auto 0 auto; }
+  form #regbtn {
+    color: #fff;
+    background: #ff498c; }
