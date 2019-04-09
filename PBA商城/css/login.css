@@ -14,3 +14,10 @@ form {
   form #logbtn {
     color: #fff;
     background: #ff498c; }
+span{
+	display:block;
+	margin:0 auto;
+	width:300px;
+	text-align:center;
+	font:16px/20px "";
+	color:#FE003F;}
