@@ -1,0 +1,186 @@
+.margin {
+  width: 1226px;
+  margin: 0 auto;
+  color: #969696; }
+
+header {
+  height: 32px;
+  background: #000; }
+  header ul {
+    height: 32px; }
+    header ul li {
+      float: right;
+      padding: 0 12px;
+      text-align: center;
+      font: 12px/32px ""; }
+      header ul li img.carlogo {
+        width: 12px;
+        height: 12px;
+        padding-right: 4px;
+        margin-bottom: 3px; }
+      header ul li a {
+        display: block;
+        color: #fff; }
+      header ul li:hover a {
+        color: #fff; }
+    header ul li:nth-child(even) {
+      padding: 0;
+      color: #4b4b4b; }
+    header ul li.carshop a {
+      color: #b0b0b0; }
+    header ul li.carshop:hover a {
+      color: #b0b0b0; }
+    header ul li.hotline a {
+      cursor: auto; }
+    header ul li.myPBA {
+      position: relative; }
+      header ul li.myPBA div.mylist {
+        display: none; }
+        header ul li.myPBA div.mylist a:hover {
+          background: #666666; }
+      header ul li.myPBA:hover div.mylist {
+        width: 100%;
+        display: block;
+        background: #424242;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-top: 32px; }
+
+nav {
+  height: 162px; }
+  nav div {
+    display: flex;
+    padding: 50px 0 37px 0; }
+    nav div ul {
+      width: 708px;
+      height: 26px;
+      margin: 0 10px 0 20px;
+      padding-top: 18px;
+      border-bottom: 1px solid #e9e9e9; }
+      nav div ul li {
+        float: left;
+        font: 16px/26px "";
+        padding: 0 12px;
+        text-align: center; }
+        nav div ul li:first-child {
+          padding-left: 0; }
+        nav div ul li:last-child {
+          padding-right: 0; }
+  nav .search {
+    width: 268px;
+    height: 48px;
+    padding: 0; }
+    nav .search input {
+      width: 190px;
+      padding: 14px;
+      font-size: 16px;
+      float: left;
+      border: 1px solid #eaeaea; }
+    nav .search #searchbtn {
+      width: 46px;
+      height: 46px;
+      border: 1px solid #eaeaea;
+      border-left: none;
+      padding: 0; }
+      nav .search #searchbtn img {
+        margin: 13px;
+        border: none; }
+
+section {
+  display: flex;justify-content: space-between; }
+  section .section-l {
+    width: 383px;
+      height: 320px; 
+      position: relative; }
+    section .section-l img {
+      width: 383px;
+      height: 320px; }
+    section .section-l .spn{
+      width: 127px;
+      height: 106px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(200, 200, 200, 0.6);
+      display: none; }
+       section .section-l p {
+      position:absolute;
+      top:0;
+      left:0;
+      bottom:0;
+      right:0;}
+  section .b_box {
+    width: 383px;
+    height: 320px;
+    position: absolute;
+    left: 450px;
+    overflow: hidden;
+    display: none; }
+    section .b_box img {
+      width: 1149px;
+      height: 960px;
+      position: absolute; }
+  section .section-r {
+    border-left: 1px solid #e2e2e2;
+    padding-left: 30px;
+    width: 429px; }
+    section .section-r .goods-name {
+      margin-top: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid #e2e2e2; }
+      section .section-r .goods-name h1 {
+        font: 22px/24px "";
+        color: #535353;
+        margin-bottom: 14px; }
+      section .section-r .goods-name p {
+        font: 14px/24px "";
+        color: #969696; }
+    section .section-r span {
+      display: block;
+      padding: 20px 0;
+      border-bottom: 1px solid #e2e2e2;
+      color: #ff498c;
+      font: 22px/24px ""; }
+    section .section-r .goods-num {
+      padding: 20px 0;
+      border-bottom: 1px solid #e2e2e2;
+      color: #969696;
+      overflow: hidden; }
+      section .section-r .goods-num label {
+        float: left;
+        line-height: 30px; }
+      section .section-r .goods-num p {
+        float: left;
+        text-align: center;
+        border: 1px solid #e2e2e2;
+        height: 28px;
+        width: 132px;
+        overflow: hidden;
+        font: 14px/24px ""; }
+        section .section-r .goods-num p b {
+          display: block;
+          width: 28px;
+          height: 28px;
+          float: left;
+          line-height: 28px; }
+        section .section-r .goods-num p input {
+          float: left;
+          text-align: center;
+          border: none;
+          width: 74px;
+          border-left: 1px solid #e2e2e2;
+          border-right: 1px solid #e2e2e2;
+          height: 20px;
+          line-height: 18px;
+          padding: 4px 0;
+          overflow: hidden; }
+    section .section-r .add {
+      display: block;
+      width: 180px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #fff;
+      background: #FF498C;
+      margin-top: 20px; }

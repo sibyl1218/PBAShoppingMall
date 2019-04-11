@@ -1,0 +1,36 @@
+.margin{width:1226px;margin:0 auto;color:#969696;}
+header{height:32px;background:#000;}
+header ul{height:32px;}
+header ul li{float:right;padding:0 12px;text-align: center;font:12px/32px "";}
+header ul li img.carlogo{width:12px;height:12px;padding-right:4px;margin-bottom: 3px;}
+header ul li:nth-child(even){padding:0;color:#4b4b4b;}
+header ul li.carshop a{color:#b0b0b0;}
+header ul li.hotline a{cursor:auto;}
+header ul li a{display: block;color:#fff;}
+header ul li:hover a{color:#fff;}
+header ul li.carshop:hover a{color:#b0b0b0;}
+header ul li.myPBA{position: relative;}
+header ul li.myPBA div.mylist{display:none;}
+header ul li.myPBA:hover div.mylist{width:100%;display:block;background:#424242;position: absolute;left:0;top:0;margin-top:32px;}
+header ul li.myPBA div.mylist a:hover{background:#666666;}
+nav{height:162px;}
+nav div{display: flex;padding:50px 0 37px 0;position:relative;}
+nav div ul{width:708px;height:26px;margin:0 10px 0 20px;padding-top:18px;border-bottom: 1px solid #e9e9e9;}
+nav div ul li{float:left;font:16px/26px "";padding:0 12px;text-align: center;}
+nav div ul li:first-child{padding-left: 0;}
+nav div ul li:last-child{padding-right: 0;}
+nav .search{width:268px;height:48px;padding:0;}
+nav .search input{width:190px;padding:14px;font-size: 16px;float:left;border:1px solid #eaeaea;}
+nav .search #searchbtn{width:46px;height:46px;border:1px solid #eaeaea;border-left:none;padding:0;}
+nav .search #searchbtn img{margin:13px;border:none;}
+nav .keyshow{position:absolute;right:16px;top:98px;width:268px;display:none;z-index: 99;padding:0;}
+nav .keyshow li{text-align: left;line-height: 24px;height:24px;background:#F3F3F3;float: none;padding:0;}
+.goods{display:flex;justify-content: space-between;text-align: center;margin-bottom:16px;}
+.goods li{width:242px;height:350px;position:relative;background:url(http://pbaimage.pba.cn/2014/new_pba/images/homepage/star_goods_bg.png) center center no-repeat;
+          transition: .5s;}        
+.goods li img{width:100%;height:350px;}
+.goods li:hover{transform: translateY(-5px);}
+.goods li .goods-msg{width:100%;position:absolute;left:0;bottom:0;padding-bottom:10px;text-align:center;}
+.goods li .goods-msg .goods-msg-t{font:16px/16px "";}
+.goods li .goods-msg .goods-msg-c{font:14px/34px "";}
+.goods li .goods-msg .goods-msg-b{font:18px/30px "";}
