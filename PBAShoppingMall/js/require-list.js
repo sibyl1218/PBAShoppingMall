@@ -10,7 +10,7 @@ require.config({
 
 require(["jq","goodslist","godetail"],function(_,goodslist,godetail){	
 	
-	var goods = new goodslist.mylist();		
+	var goods = new goodslist.mylist();
    //详情页跳转
 	var g= new godetail.mygodetail();
 })

@@ -9,7 +9,6 @@ define(function(){
 			$(".goods").on("click","li",function(event){
                  var target=$(event.target).parents("li");
                  that.id=target.attr("index");
-//               console.log(this.id);  
                  that.setCookie();                
 			});
 		}

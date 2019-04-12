@@ -30,8 +30,8 @@ define(function(){
 					}
 					$("#cont").children("ul").html(str);
 				}		
-				}			
+			}
 	return {
 		mylist:List
 	}
-})
+ })

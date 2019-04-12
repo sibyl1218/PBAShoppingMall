@@ -10,6 +10,7 @@
                     this.load();
 //                  3.绑定事件
                     this.addEvent();
+//                  this.binding()
                     
 				}
 				load(){
@@ -17,7 +18,7 @@
 						url:this.url,
 						success:(res)=>{
 							this.res=res;
-//							获取cookie
+////							获取cookie
 							this.getCookie();
 						}
 					});
@@ -27,8 +28,22 @@
                     this.goods2=JSON.parse(getCookie("goods2"));
                     this.display();
                     this.check();
-                    this.getSum();
 				}
+//				binding(){
+//					this.user=getCookie("user");					
+//					console.log(this.user)
+//					this.user=this.user.slice(1,this.user.length-1);	
+//					this.user+=",";	
+//					console.log(this.user)
+//					this.goods2=getCookie("goods2");
+//					this.goods2=this.goods2.slice(1,this.goods2.length-1);
+//					console.log(this.user)
+//					this.user+=this.goods2;
+//					this.user="["+this.user+"]";
+//					setCookie("user",this.user);
+//                  this.user=getCookie("user");                  
+//					console.log(JSON.parse(this.user));                   
+//				}
 				display(){
 					var str="";
 //					比对cookie和总数据
@@ -36,7 +51,7 @@
 	                    for(var j=0;j<this.goods2.length;j++){
 	                    	if(this.res[i].goodsId==this.goods2[j].id){
 	                    		str+=`<tr>
-										<td><input type="checkbox" name="" id="" value="" /></td>
+										<td><input type="checkbox" name="" id="${this.goods2[j].id}" value="" /></td>
 										<td><img src="${this.res[i].src}"/></td>
 										<td>${this.res[i].name}</td>
 										<td>${this.res[i].price}</td>
@@ -48,22 +63,48 @@
                    }
 					this.tbody.innerHTML=str;
 				}
+				check(){
+						var sum1=0;
+						var count1=0;
+                    $("tr").on("click","input",()=>{
+                    if($(event.target).prop("checked")==true&&$(event.target).attr("id")=="selectAll"){                	
+                            $("input").prop("checked",true);
+							this.getSum();
+                    }else{
+	                   for(var i=0;i<this.goods2.length;i++){
+	                   	for(var j=0;j<this.res.length;j++){
+						if($(event.target).prop("checked")==true&&$(event.target).attr("id")==this.goods2[i].id&&this.res[j].goodsId==this.goods2[i].id){
+							sum1+=parseInt($(event.target).parent("td").parent("tr").children("td").eq(4).children("input").val());
+							var pri=this.res[j].price.slice(1);
+							count1+=parseFloat(pri)*parseInt(this.goods2[i].num);
+						}
+						}
+							this.sum.innerHTML=parseInt(sum1);  
+							this.prices.innerHTML=count1.toFixed(2);
+							
+                    }
+	               }
+                    if($(event.target).prop("checked")==false&&$(event.target).attr("id")=="selectAll"){                	
+                            $("input").prop("checked",false);
+                            this.sum.innerHTML=0
+                            this.prices.innerHTML=0
+                    }
+                   });
+				}
 				getSum(){
 					var sum=0;
 					var count=0;
 					for(var i=0;i<this.goods2.length;i++){	
 						sum+=parseInt(this.goods2[i].num);
-						this.sum.innerHTML=sum;
+						this.sum.innerHTML=parseInt(sum);
 						for(var j=0;j<this.res.length;j++){
 							if(this.res[j].goodsId==this.goods2[i].id){
 								var pri=this.res[j].price.slice(1);
 								count+=parseFloat(pri)*parseInt(this.goods2[i].num);								
 							}
-							this.prices.innerHTML=count;
-							
+							this.prices.innerHTML=count.toFixed(2);	
 						}						
-					}
-					
+					}					
 				}
 				addEvent(){
 					this.tbody.addEventListener("click",(eve)=>{
@@ -104,14 +145,7 @@
 					callback(i);
 					//9.再设置回去
 					setCookie("goods2",JSON.stringify(this.goods2));
-				}
-				check(){
-					$("tr").on("click","input",function(){
-						if($(event.target).prop("checked")==true){
-							console.log(1);
-						}
-						
-					})
+//					setCookie("user",JSON.stringify(this.user));
 				}
 			}
        return {
